@@ -55,4 +55,30 @@ public class Cart {
 		System.out.println("***************************************************");
 	}
 	
+	public void searchCart(int id) {
+		int check = 0;
+		for (int i = 0; i < qtyOrdered; i++) {
+			if (itemsOrdered[i].getId() == id) {
+				System.out.println("DVD - " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getCost() + "$");
+				check = 1;
+				break;
+			}
+		}
+		if (check == 0)
+			System.out.println("No DVD match with your ID");
+	}
+	
+	public void searchCart(String title) {
+		int check = 0;
+		for (int i = 0; i < qtyOrdered; i++) {
+			if (itemsOrdered[i].getTitle().equals(title)) {
+				System.out.println("DVD - " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() + " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() + ": " + itemsOrdered[i].getCost() + "$");
+				check = 1;
+				break;
+			}
+		}
+		if (check == 0) {
+			System.out.println("No DVD match with your title");
+		}
+	}
 }

@@ -19,6 +19,10 @@ public class Aims {
 		//anOrder.removeDigitalVideoDisc(dvd3);
 		//anOrder.printCart();
 		//System.out.println(anOrder.totalCost());
+		
+		//anOrder.printCart();
+		//anOrder.searchCart(1);
+		//anOrder.searchCart("Aladin");
 	}
 
 }
