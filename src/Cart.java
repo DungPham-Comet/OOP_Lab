@@ -47,7 +47,7 @@ public class Cart {
 	
 	/*public void printCart() {
 		for (int i = 0; i < qtyOrdered; i++) {
-			System.out.println(itemsOrdered[i].getTitle());
+			System.out.println(itemsOrdered[i].getId());
 		}
 	}*/
 	
